@@ -20,18 +20,18 @@
 
 ### Installation
 
-bash
 # Clone the repository
 git clone [https://github.com/De-Fo/ghostprobe-project.git](https://github.com/De-Fo/ghostprobe-project.git)
+
 cd ghostprobe-project
 
-# [Optional but Recommended] Create and activate a virtual environment
+# [Optional] 
+Create and activate a virtual environment
 python -m venv venv
 .\venv\Scripts\activate
 
 # Install dependencies in editable mode
 pip install -e .
-
 
 ### Basic Usage
 
@@ -47,7 +47,6 @@ python -m ghostprobe.cli scan target.com --modules subdomain,uploads --format bo
 # List available modules
 python -m ghostprobe.cli modules
 
-
 ### Advanced Options# High-intensity scan with custom settings
 python -m ghostprobe.cli scan example.com \
   --modules subdomain,uploads,iot \
@@ -58,7 +57,6 @@ python -m ghostprobe.cli scan example.com \
 
 # Session hijack detection (requires proxy setup)
 python -m ghostprobe.cli scan target.com --modules session --proxy-port 8080
-
 
 ## Module Details
 
@@ -89,36 +87,67 @@ python -m ghostprobe.cli scan target.com --modules session --proxy-port 8080
 
 ## Project Structure
 
+
 ghostprobe-project/  
+
 ├── ghostprobe/       
+
 │   ├── core/                  # Core scanning modules
+
 │   │   ├── subdomain.py      # Subdomain enumeration
+
 │   │   ├── uploads.py        # Backup file scanner
+
 │   │   ├── session.py        # Session hijack detector
+
 │   │   ├── iot.py           # IoT device scanner
+
 │   │   └── utils.py         # Report generation
+
 |   |
+
 │   ├── gui/                  # Desktop GUI (future)
+
 |   |   ├── main.py
+
 |   |   └── components/
+
 |   |   
+
 │   ├── web_preview/          # Web demo (future)
+
 |   |   ├── app.py
+
 |   |   └── limiter.py
+
 |   |
+
 │   ├── data/                 # Wordlists and signatures
+
 │   │   ├── subdomain_wordlist.txt
+
 │   │   ├── backup_wordlist.txt
+
 │   │   └── iot_creds.json
+
 |   |
+
 │   ├── __init__.py            
+
 │   ├── cli.py               # Main CLI interface
+
 │   └── config.py            # Configuration settings
+
 |
+
 ├── setup.py
+
 ├── requirements.txt
+
 ├── README.md
+
 └── LICENSE.txt
+
 
 ## Roadmap
 
@@ -153,11 +182,18 @@ This tool is intended for authorized penetration testing and security research o
 MIT License - see LICENSE file for details.
 
 ## Honesty
-Hey, lastly this, it's a tool built in one sitting for now, so don't expect magic.
+Hey, lastly this.
+
+It's a tool built in one sitting for now, so don't expect magic.
+
 Sometimes works, sometimes doesn't.
+
 Only tried out on windows for now where only the python -m  option of running it was working.
+
 Also the make build was breaking it so I removed that.
+
 After more testing and actually running it on UNIX, will do more updates and additions to it.
+
 Thanks for reading.
 
 **GhostProbe** - Automating tests you need to run.
