@@ -23,7 +23,7 @@
 bash
 # Clone the repository
 git clone [https://github.com/De-Fo/ghostprobe-project.git](https://github.com/De-Fo/ghostprobe-project.git)
-cd ghostprobe
+cd ghostprobe-project
 
 # [Optional but Recommended] Create and activate a virtual environment
 python -m venv venv
