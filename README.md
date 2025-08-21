@@ -22,7 +22,7 @@
 
 bash
 # Clone the repository
-git clone [https://github.com/De-Fo/ghostprobe.git](https://github.com/De-Fo/ghostprobe.git)
+git clone [https://github.com/De-Fo/ghostprobe-project.git](https://github.com/De-Fo/ghostprobe-project.git)
 cd ghostprobe
 
 # [Optional but Recommended] Create and activate a virtual environment
