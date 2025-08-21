@@ -1,0 +1,56 @@
+
+{
+  "default_credentials": {
+    "admin": ["", "admin", "password", "1234", "admin123"],
+    "root": ["", "root", "password", "toor", "admin"],
+    "user": ["", "user", "password", "1234"],
+    "guest": ["", "guest", "password"],
+    "test": ["", "test", "password"],
+    "support": ["support", "password"],
+    "service": ["service", "password"]
+  },
+  "vendor_specific": {
+    "dlink": {
+      "admin": ["", "admin"],
+      "user": [""]
+    },
+    "netgear": {
+      "admin": ["password", "admin", "1234"]
+    },
+    "linksys": {
+      "admin": ["admin"],
+      "": ["admin"]
+    },
+    "tplink": {
+      "admin": ["admin"]
+    },
+    "asus": {
+      "admin": ["admin"]
+    },
+    "ubiquiti": {
+      "ubnt": ["ubnt"]
+    }
+  },
+  "device_signatures": {
+    "boa": {
+      "description": "Boa web server (common in embedded devices)",
+      "fingerprint": ["Server: Boa", "boa/"],
+      "default_ports": [80, 443, 8080]
+    },
+    "goahead": {
+      "description": "GoAhead web server",
+      "fingerprint": ["Server: GoAhead", "goahead/"],
+      "default_ports": [80, 443, 8080]
+    },
+    "allegro": {
+      "description": "Allegro RomPager",
+      "fingerprint": ["Server: Allegro-Software-RomPager", "RomPager/"],
+      "default_ports": [80, 443]
+    },
+    "mini_httpd": {
+      "description": "mini_httpd server",
+      "fingerprint": ["Server: mini_httpd", "mini_httpd/"],
+      "default_ports": [80, 8080]
+    }
+  }
+}
